@@ -1,0 +1,28 @@
+{
+  "name": "c3-health-app",
+  "version": "1.0.0",
+  "description": "C3 Health application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch app",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IBN12/c3-health-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/IBN12/c3-health-app/issues"
+  },
+  "homepage": "https://github.com/IBN12/c3-health-app#readme",
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1"
+  }
+}
