@@ -60,7 +60,9 @@ export function DisableElements(element, reason, path){
         if (reason === 'Menu Window Opened')
         {
             // Note: These paths will change based on where the application is uploaded. 
-            if (path === 'http://localhost:4000/' || path === 'http://localhost:4000/#') // Homepage Variables
+            if (path === 'http://localhost:4000/' || path === 'http://localhost:4000/#' 
+                || path === 'https://c3-health-app-production.up.railway.app/' 
+                || path === 'https://c3-health-app-production.up.railway.app/#') // Homepage Variables
             {
                 // |Nav Header Variables|
                 mainNavBrandLabel.classList.add('no-click');
@@ -136,7 +138,9 @@ export function EnableElements(element, reason, path){
         if (reason === 'Menu Window Closed')
         {
             // Note: These paths will change based on where the application is uploaded. 
-            if (path === 'http://localhost:4000/' || path === 'http://localhost:4000/#') // Homepage Variables
+            if (path === 'http://localhost:4000/' || path === 'http://localhost:4000/#'
+                || 'https://c3-health-app-production.up.railway.app/'
+                || 'https://c3-health-app-production.up.railway.app/#') // Homepage Variables
             {
                 // |Nav Header Variables|
                 mainNavBrandLabel.classList.remove('no-click');

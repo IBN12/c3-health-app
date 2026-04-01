@@ -2,7 +2,8 @@
 body{
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #152331, #000000); 
+    background: linear-gradient(to right, #152331, #000000);
+    /* position: relative; */
 }
 
 /* * - All the elements in the application. */
@@ -57,6 +58,21 @@ body{
     color:#86efac;
 }
 
+/* Responsive */
+@media (max-width: 1024px) {
+    #nav-main {
+        gap: 40px;
+    }
+}
+@media (max-width: 640px) {
+    #nav-main {
+        gap: 12px;
+    }
+    .nav-menu-button {
+        width: 38px;
+    }
+}
+
 /***********************************************************************************************************************************/
 /***********************************************************************************************************************************/
 /* |Main Menu Window (Navigation Window)| */
@@ -77,6 +93,9 @@ body{
 .menu-is-open{
     transform: rotate(180deg);
     fill: #86efac;
+}
+.bg-color-mobile-menu-window{
+    background-color: #152331f6 !important;
 }
 
 .menu-window-close-button-container{ /* Menu Window Close Button Container */
@@ -205,6 +224,28 @@ body{
 }
 .menu-nav-list a:hover{
     color: #86efac;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+    #menu-window-main {
+        min-width: min(700px, 90vw);
+    }
+}
+@media (max-width: 640px) {
+    #menu-window-main {
+        min-width: 100vw;
+    }
+    .menu-window-content-container {
+        padding: 24px 24px 40px;
+    }
+    .menu-nav {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .menu-brand-tagline {
+        max-width: 100%;
+    }
 }
 
 
@@ -388,4 +429,10 @@ body{
 /* |Miscellaneous Selectors| */
 .no-click{
     pointer-events: none;
+}
+.hide{
+    display: none;
+}
+.visibility{
+    visibility:hidden;
 }
